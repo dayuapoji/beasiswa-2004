@@ -33,14 +33,14 @@ fig_donatur <- ggplot(data = stat2021) +
 # save figs
 w <- 8 # set fig width in inch
 
-pdf(file = "fig/donasi.pdf",
-    width = w, height = w/1.5, 
-    useDingbats = F) 
+png(file = "fig/donasi.png",
+    width = w, height = w/1.5, units = 'in', res = 300)#, 
+    # useDingbats = F) 
 fig_donasi
 dev.off() 
 
-pdf(file = "fig/donatur.pdf",
-    width = w, height = w/1.5, 
-    useDingbats = F) 
+png(file = "fig/donatur.png",
+    width = w, height = w/1.5, units = 'in', res = 300)#, 
+    # useDingbats = F) 
 fig_donatur
 dev.off() 
